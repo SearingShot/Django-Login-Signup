@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Welcome to Our User Authentication System</h1>
+  <p>Please choose an option:</p>
+  <ul>
+    <li><a href="{% url 'signup' %}">Sign Up</a></li>
+    <li><a href="{% url 'login' %}">Login</a></li>
+  </ul>
+{% endblock %}

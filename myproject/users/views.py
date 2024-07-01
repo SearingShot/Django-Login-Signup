@@ -17,6 +17,10 @@ def signup(request):
         form = CustomUserCreationForm()
     return render(request, 'users/signup.html', {'form': form})
 
+
+def home(request):
+    return render(request, 'users/home.html')
+
 def user_login(request):
     if request.method == 'POST':
         username = request.POST['username']
